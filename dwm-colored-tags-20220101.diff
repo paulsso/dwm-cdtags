@@ -1,3 +1,24 @@
+diff --git a/config.def.h b/config.def.h
+index a2ac963..d843bc3 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -1,25 +1,47 @@
+ static const char *colors[][3]      = {
+ 	/*               fg         bg         border   */
+ 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+ 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
++    /*              text        bg          (unused)  */
++    [Tag0]  =  { "#000000", "#FFFFFF", "#000000" },
++    [Tag1]  =  { col_cyan, "#0C310B", "#000000" },
++    [Tag2]  =  { col_cyan, "#569655", "#000000" },
++    [Tag3]  =  { col_cyan, "#90BD38", "#000000" },
++    [Tag4]  =  { col_cyan, "#DBE736", "#000000" },
++    [Tag5]  =  { col_cyan, "#F1F4CE", "#000000" },
++};
+ 
+ /* tagging */
+-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
++static const char *tags[] = { "1", "2", "3", "4", "5" };
 diff --git a/dwm.c b/dwm.c
 index a96f33c..7dfac61 100644
 --- a/dwm.c
@@ -33,25 +54,3 @@ index a96f33c..7dfac61 100644
  		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
  		if (occ & 1 << i)
  			drw_rect(drw, x + boxs, boxs, boxw, boxw,
-diff --git a/config.def.h b/config.def.h
-index a2ac963..d843bc3 100644
---- a/config.def.h
-+++ b/config.def.h
-@@ -1,25 +1,47 @@
- static const char *colors[][3]      = {
- 	/*               fg         bg         border   */
- 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
- 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-+    /*              text        bg          (unused)  */
-+    [Tag0]  =  { "#000000", "#FFFFFF", "#000000" },
-+    [Tag1]  =  { col_cyan, "#0C310B", "#000000" },
-+    [Tag2]  =  { col_cyan, "#569655", "#000000" },
-+    [Tag3]  =  { col_cyan, "#90BD38", "#000000" },
-+    [Tag4]  =  { col_cyan, "#DBE736", "#000000" },
-+    [Tag5]  =  { col_cyan, "#F1F4CE", "#000000" },
-+};
- 
- /* tagging */
--static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-+static const char *tags[] = { "1", "2", "3", "4", "5" };
- 
