@@ -1,0 +1,35 @@
+diff --git a/config.def.h b/config.def.h
+index a2ac963..28bbea1 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -12,14 +16,49 @@ static const char col_gray2[]       = "#444444";
+ static const char col_gray3[]       = "#bbbbbb";
+ static const char col_gray4[]       = "#eeeeee";
+ static const char col_cyan[]        = "#005577";
++
++static const char col_green1[]      = "#a3be8c";
++static const char col_green2[]      = "#8cbe8e";
++static const char col_green3[]      = "#8cbea7";
++static const char col_green4[]      = "#bcbe8c";
++static const char col_green5[]      = "#bea78c";
++
++static const char col_cyan1[]        = "#88c0d0";
++static const char col_cyan2[]        = "#889cd0";
++static const char col_cyan3[]        = "#9888d0";
++static const char col_cyan4[]        = "#88d0bc";
++static const char col_cyan5[]        = "#88d090";
++
++static const char col_blue1[]        = "#81a1c1";
++static const char col_blue2[]        = "#8181c1";
++static const char col_blue3[]        = "#a181c1";
++static const char col_blue4[]        = "#81c1c1";
++static const char col_blue5[]        = "#81c1a1";
++
++static const char col_yellow1[]      = "#ebcb8b"; 
++static const char col_yellow2[]      = "#dbeb8b"; 
++static const char col_yellow3[]      = "#abeb8b"; 
++static const char col_yellow4[]      = "#eb9b8b"; 
++static const char col_yellow5[]      = "#eb8bab"; 
++
++static const char col_white[]        = "#000000";
++
