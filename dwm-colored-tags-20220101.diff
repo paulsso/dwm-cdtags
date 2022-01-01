@@ -43,12 +43,12 @@ index a2ac963..d843bc3 100644
  	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
  	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 +    /*              text        bg          (unused)  */
-+    [Tag0]  =  { col_green1, col_cyan2, "#000000" },
-+    [Tag1]  =  { col_cyan1, "#0C310B", "#000000" },
-+    [Tag2]  =  { col_cyan1, "#569655", "#000000" },
-+    [Tag3]  =  { col_cyan1, "#90BD38", "#000000" },
-+    [Tag4]  =  { col_cyan1, "#DBE736", "#000000" },
-+    [Tag5]  =  { col_cyan1, "#F1F4CE", "#000000" },
++    [Tag0]  =  { "#000000", "#FFFFFF", "#000000" },
++    [Tag1]  =  { col_cyan, "#0C310B", "#000000" },
++    [Tag2]  =  { col_cyan, "#569655", "#000000" },
++    [Tag3]  =  { col_cyan, "#90BD38", "#000000" },
++    [Tag4]  =  { col_cyan, "#DBE736", "#000000" },
++    [Tag5]  =  { col_cyan, "#F1F4CE", "#000000" },
 +};
  
  /* tagging */
